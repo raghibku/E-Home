@@ -1,0 +1,19 @@
+1.Home Advertisement Section-4 cards---------------
+2.Latest User Review -3cards ----------------------
+2.a. two extra homepage sections-----------------
+3.Private Route-------------------------------
+4.toast sweet alert in each crud------------------
+5.my profile -show no role for regular user--------
+6.wishlist -remove button-------------------------
+7.property bought -status----------------------
+8.payment procedure----------------------------
+
+9.Agent route-----------------------------------
+10.My Added Properties -update------------
+11.update button-My Added Properties------
+12.delete button-My Added Properties------
+
+13.My sold Properties - tabular format------------
+14.offered properties- accept and reject button----
+
+

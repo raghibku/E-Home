@@ -1,0 +1,242 @@
+Real estate Platform 
+
+Pages: 
+1.HomePage
+2.Property Details Page
+3.Wishlist Page
+
+XXXX Databases
+property information
+reviews
+offers
+
+
+
+##HomePage: nav , banner/slider , advertisement , latest-user-review ,footer, +2 extra
+
+#Navbar: website (name+logo) , home , private[all-properties, dashboard ,] login
+
+#Advertisement: minimum 4 cards [ property image, prop location , price range, varification status , details button -> property details page ]
+
+#latest-user-review: reviewer (name,image,description) ,property-title
+
+##AllProperties: will contain admin verified properties which are added by all the real estate agents
+- Property image.
+- Property title.
+- property location.
+- Agent name.
+- Agent image.
+- verification status.
+- Price range.
+- Details button ->property details page
+
+##Property details page -Private
+-title,Description,price range and agent name + ...
+
+-Add to wishlist button ->will add on wishlist page -> mongo
+
+-other reviews about the property
+
+-add review button -> take review through modal
+
+
+
+
+---------------DASHBOARD------------------
+-_________USER_______________________
+routes:
+A. My Profile.
+B. Wishlist.
+C. Property bought.
+D. My reviews.
+
+###My Profile Page: user name,user image,role
+
+###Wishlist: users wishlist cards
+
+- Property image.
+- Property title.
+- property location.
+- Agent name.
+- Agent image.
+- verification status.
+- Price range.
+- Make an offer button.-->navigate to offer form page
+- remove button.
+
+###Offer Form Page:
+- Property title (readonly)
+- Property location (readonly)
+- Agent name (readonly)
+- Offered amount. (User can not add an amount which is not in range of the price which was specified by the agent of that property)
+- buyer email(readonly)
+- buyer name (readonly)
+- buying date.
+- offer button
+onclick:
+1.If the price is not in between the price range then the offer will not be completed and an error message will be shown
+
+2.This information will be saved to the database and also it will be added to users “Property bought” page with the status
+“pending”
+
+
+###Property bought: All the properties which the user has offered for will be shown here
+
+cards:- property location.
+- property title.
+- property image
+- Agent name
+- offered amount.
+- status['pending]
+if offer accepted by agent->status 'accepted' -> pay button will appear -> onclicking 'pay'button->redirect to payment page->
+
+##payment page.
+ where the user can pay the offered amount through
+stripe or any other payment methods for that property.If the payment is completed then the status will
+be “bought” also payment transaction id will be shown in place of the pay button.
+
+
+##my-reviews:
+Each review card will contain
+- property title
+- agent name
+- review time
+- review description
+- delete button.
+
+
+
+
+-_________Agent_______________________
+
+following routes:
+A. Agent Profile .
+B1. Add Property
+B. My added properties.
+C. My sold properties.   ****todo****
+D. Requested properties.
+
+##agent profile
+
+ user name,user image,role
+
+##Add Property
+- Property image.
+- Property title.
+- property location.
+- Agent name.[readonly]
+- Agent email.[readonly]
+- Price range.
+-Add property button -->save to db
+
+###My added properties: see all his/her added properties.
+
+- Property image.
+- Property title.
+- property location.
+- Agent name.
+- Agent image.
+-verification status
+- Price range.
+
+-- update button[disabled if rejected]-->Update form page
+
+-delete button--> remove the property from the “My added properties” and also from the
+database.
+
+
+##update form page
+
+-> Property image.
+-> Property title.
+-> property location.
+-> Agent name.(readonly)
+-> Agent email.(readonly)
+-> Price range.
+submit button -> update database
+
+
+
+##My sold properties: 
+Only
+the properties for which the buyer has paid for will be shown here tabular
+format.
+- property title.
+- Property location.
+- buyer email
+- buyer name
+- sold price.
+
+#Requested/offered properties: all the offers which are made by the users that the agent has added 
+->property title.
+-> Property location.
+-> buyer email
+-> buyer name
+-> offered price.
+-> accept button ****todo****
+-> reject button ****todo****
+
+by default status will be pending.After clicking the accept button this status will be changed to
+“accepted” and both the accept and reject button will disappear and the status will be shown
+there.This will also happen for the reject button and “rejected” status will be shown.
+
+if one offer is accepted--> other offers of that property will be rejected
+
+
+
+-_________Admin_______________________
+
+
+following routes:
+A. Admin Profile.
+B. Manage Properties.
+C. Manage Users.
+D. Manage reviews
+
+
+##Admin Profile: some information about the logged in user.user name,user image,role
+
+##Manage properties:All the properties . tabular format.
+
+- property title.
+- Property location.
+- Agent name
+- agent email
+- price range.
+- verify button-->added to "All properties" with varified status , reject will dissappear ,varified will be shown
+- reject button.--> “rejected” status will be shown
+
+## Manage users:all the users in a tabular form
+
+
+-User name
+-User email
+-Make admin button
+-Make agent button
+-Mark as fraud button (This button will only appear if the user is an agent)->onclick->maarked as fraud in this page ->All properties page [fraud property disappear]->
+that agent will
+not be able to add any properties in the future.
+-Delete user
+
+##Manage reviews:All the user reviews 
+
+reviewer image,
+reviewer email
+reviewer name
+review
+delete button->dlt from review database
+
+##Advertise property: a tabular format
+property image,
+property title,
+price range,
+Agent name
+“Advertise” button
+“Remove Advertise” button.
+Admin can advertise at most 6 properties.If admin tries to advertise more properties then an
+error message will be shown.
+
+Other
+*crud -toast/sweetalert
+*Use Tanstack query with mutation for data fetching and posting
+*404 page

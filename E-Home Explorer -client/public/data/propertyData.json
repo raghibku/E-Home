@@ -1,0 +1,147 @@
+[
+    {
+        "propertyTitle": "Cozy Apartment in the Heart of the City",
+        "propertyImage": "https://source.unsplash.com/white-and-brown-table-lamp-on-brown-wooden-table-TDIdPmW2P9k",
+        "propertyLocation": "123 Main Street, Cityville",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 80000,
+        "maxPrice": 100000,
+        "description": "A charming apartment with modern amenities and a great view of the city skyline."
+    },
+    {
+        "propertyTitle": "Spacious Family Home with a Garden",
+        "propertyImage": "https://source.unsplash.com/field-of-purple-flower-beside-house-P8bsrm8KbM0",
+        "propertyLocation": "456 Oak Street, Suburbia",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 40000,
+        "maxPrice": 60000,
+        "description": "Perfect for a growing family, this home features a large garden and ample living space."
+    },
+    {
+        "propertyTitle": "Luxury Penthouse with Panoramic Views",
+        "propertyImage": "https://source.unsplash.com/beige-couch-and-armchair-tHkJAMcO3QE",
+        "propertyLocation": "789 Skyview Avenue, Highrise City",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 90000,
+        "maxPrice": 100000,
+        "description": "Experience opulent living in this stunning penthouse with breathtaking city views."
+    },
+    {
+        "propertyTitle": "Quaint Cottage in the Countryside",
+        "propertyImage": "https://source.unsplash.com/beige-and-gray-concrete-houses-INHd31ifgDY",
+        "propertyLocation": "101 Forest Lane, Rural Retreat",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 110000,
+        "maxPrice": 150000,
+        "description": "Escape to the tranquility of the countryside in this charming cottage surrounded by nature."
+    },
+    {
+        "propertyTitle": "Modern Loft in Trendy Urban District",
+        "propertyImage": "https://source.unsplash.com/white-leather-couch-on-brown-wooden-parquet-flooring-McmcjgGk8uM",
+        "propertyLocation": "222 Loft Avenue, Hipster Heights",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 70000,
+        "maxPrice": 90000,
+        "description": "Live in style with this contemporary loft in the heart of the city's artistic scene."
+    },
+    {
+        "propertyTitle": "Seaside Retreat with Ocean Views",
+        "propertyImage": "https://source.unsplash.com/modern-house-interior-design-3d-rendering-project-GEv0x00erqU",
+        "propertyLocation": "333 Coastal Drive, Serene Shores",
+        "agentName": "Sana",
+        "agentEmail": "sana@gmail.com",
+        "agentImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "verificationStatus": "pending",
+        "minPrice": 80000,
+        "maxPrice": 100000,
+        "description": "Relax by the ocean in this beautiful retreat featuring stunning views and beach access."
+    },
+    {
+        "propertyTitle": "Modern City Apartment with a View",
+        "propertyImage": "https://source.unsplash.com/brown-wooden-chair-near-white-wooden-door-7450hH--84M",
+        "propertyLocation": "456 Downtown Street, Metropolis",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 50000,
+        "maxPrice": 70000,
+        "description": "Enjoy urban living in this sleek apartment with panoramic city views."
+    },
+    {
+        "propertyTitle": "Charming Suburban House with a Garden",
+        "propertyImage": "https://source.unsplash.com/green-trees-near-red-and-white-house-under-blue-sky-during-daytime-NLbMgDBio4Y",
+        "propertyLocation": "789 Oak Lane, Suburbia",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 15000,
+        "maxPrice": 190000,
+        "description": "A perfect family home with a lovely garden for outdoor activities."
+    },
+    {
+        "propertyTitle": "Luxurious Penthouse in the Sky",
+        "propertyImage": "https://source.unsplash.com/beige-couch-and-armchair-tHkJAMcO3QE",
+        "propertyLocation": "101 Sky High Avenue, Skyline City",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 200000,
+        "maxPrice": 220000,
+        "description": "Indulge in luxury living with this breathtaking penthouse featuring top-notch amenities."
+    },
+    {
+        "propertyTitle": "Quaint Cottage in a Picturesque Village",
+        "propertyImage": "https://source.unsplash.com/brown-and-white-concrete-house-uOYak90r4L0",
+        "propertyLocation": "222 Forest Road, Countryside",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 80000,
+        "maxPrice": 90000,
+        "description": "Escape to the serenity of a picturesque village in this cozy cottage."
+    },
+    {
+        "propertyTitle": "Stylish Loft in the Heart of the Arts District",
+        "propertyImage": "https://source.unsplash.com/brown-wooden-table-with-chairs-o9i8xjpCr54",
+        "propertyLocation": "333 Loft Street, Artsy District",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 100000,
+        "maxPrice": 140000,
+        "description": "Immerse yourself in the vibrant arts scene with this stylish loft in a creative neighborhood."
+    },
+    {
+        "propertyTitle": "Secluded Beach House with Oceanfront Views",
+        "propertyImage": "https://source.unsplash.com/brown-hut-near-body-of-water-oji_NGmBI5o",
+        "propertyLocation": "444 Coastal Retreat, Seaside Haven",
+        "agentName": "Noyon",
+        "agentEmail": "noyon@gmail.com",
+        "agentImage": "https://source.unsplash.com/man-crossing-both-arms-KIPqvvTOC1s",
+        "verificationStatus": "pending",
+        "minPrice": 90000,
+        "maxPrice": 100000,
+        "description": "Experience the tranquility of the ocean in this secluded beach house with stunning views."
+    }
+    
+]
