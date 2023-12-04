@@ -4,13 +4,19 @@ import { useNavigate } from 'react-router-dom'
 const Banner = () => {
     const navigate = useNavigate();
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://source.unsplash.com/white-and-blue-glass-walled-high-rise-building-w3eFhqXjkZE)' }}>
-            <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-center text-gray-100">
-                <div className="max-w-xl ">
-                    <h1 className="mb-5 text-5xl font-bold">Welcome to E-Home</h1>
-                    <p className="mb-5">Discover Your Dream Home with e-home</p>
-                    <button className="btn btn-primary" onClick={()=>navigate('/allProperties')} >See Properties</button>
+        
+        <div className='flex justify-center items-center bg-gradient-to-r from-blue-400 to-pink-400 h-screen '>
+            <div className='flex flex-col md:flex-row  justify-center items-center min-w-min gap-4 my-8 md:gap-10'>
+                <div className='flex flex-col justify-center items-center text-white'>
+                    <h1 className='text-4xl md:text-6xl font-bold font-serif text-center mt-10'>Welcome to <br /> E-Home</h1>
+                    <img className="mask mask-squircle h-[300px] md:hidden " src="https://source.unsplash.com/two-white-wooden-doors-with-grills-FTy5VSGIfiQ "/>
+
+                    <p className="mb-5">Discover Your Dream Home with E-Home</p>
+                    <button className="btn btn-secondary text-white mb-10" onClick={()=>navigate('/allProperties')} >See Properties</button>
+                </div>
+                <div className=''>
+                <img className="mask mask-squircle md:h-[600px] hidden md:flex" src="https://source.unsplash.com/two-white-wooden-doors-with-grills-FTy5VSGIfiQ "/>
+
                 </div>
             </div>
         </div>

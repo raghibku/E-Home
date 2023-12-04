@@ -10,7 +10,7 @@ const AllProperties = () => {
     const navigate = useNavigate();
     const axiosSecure = useAxiosSecure();
 
-    const { data: ads = [] } = useQuery({
+    const { data: ads = [],refetch } = useQuery({
         queryKey: ['ads'],
         queryFn: async () => {
             const res = await axiosSecure.get('/advertiseProperty');
@@ -24,7 +24,7 @@ const AllProperties = () => {
     }, [count])
 
 
-    const { data: properties = [],refetch } = useQuery({
+    const { data: properties = [] } = useQuery({
         queryKey: ['properties'],
         queryFn: async () => {
             const res = await axiosSecure.get('/verifiedProperties');
@@ -42,7 +42,7 @@ const AllProperties = () => {
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: `Property Added`,
+                        title: `Added to Featured List`,
                         showConfirmButton: false,
                         timer: 1500
                     })

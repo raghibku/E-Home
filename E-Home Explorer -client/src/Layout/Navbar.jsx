@@ -22,10 +22,10 @@ const Navbar = () => {
   </>
   return (
     <div className='w-full flex justify-center items-center '>
-      <div className="navbar flex justify-between  bg-primary w-full px-4 lg:px-12">
+      <div className="navbar flex justify-between  bg-neutral w-full px-4 lg:px-12">
         <div className="navbar-start w-min md:w-full" >
           <div className="flex justify-center items-center gap-3">
-            <h1 className="text-gray-200 hidden lg:flex text-3xl font-serif font-extrabold">E-Home</h1>
+            <h1 className=" hidden lg:flex text-3xl font-serif font-extrabold text-transparent lg:text-5xl bg-clip-text bg-gradient-to-r from-blue-500 to-pink-400">E-Home</h1>
             <img className="hidden lg:flex" src="/logos/icons8-home-64.png" alt="" />
 
           </div>

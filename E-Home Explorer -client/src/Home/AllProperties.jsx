@@ -30,15 +30,18 @@ const AllProperties = () => {
                   </h2>
 
                   <p>{property.propertyLocation}</p>
-                  <div className='flex justify-between items-center'>
+                  <div className='flex justify-between items-center my-2'>
                     <div className='flex justify-start items-center gap-2'>
                       <p>Agent:</p>
-                      <p>{property.agentName}</p>
+                      <p className='text-xl text-primary font-semibold'>{property.agentName}</p>
                       <img src={property.agentImage} className='h-10 w-10 rounded-full' alt="" />
                     </div>
-                    <p>
-                      Status : {property.verificationStatus}
-                    </p>
+                    <>
+                      {property.verificationStatus==='verified'?
+                      <img src='/logos/icons8-verified-64 (1).png' className='h-10 w-10' alt="" />:
+                      <h1>status:{property.verificationStatus}</h1>
+                      }
+                    </>
                   </div>
 
                   <div className='flex justify-between items-center py-4'>

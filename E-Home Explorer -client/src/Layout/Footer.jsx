@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-primary text-primary-content">
+    <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
       <aside>
         <img src="/logos/icons8-home-64.png" alt="" />
         <p className="font-bold">

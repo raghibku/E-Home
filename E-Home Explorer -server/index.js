@@ -65,8 +65,9 @@ async function run() {
           return await propertyCollection.findOne(propertyQuery);
         })
       );
+      const filteredProperties = detailedProperties.filter(property => property !== null);
 
-      res.send(detailedProperties);
+      res.send(filteredProperties);
     })
 
     app.post('/advertiseProperty', async (req, res) => {
@@ -213,13 +214,17 @@ async function run() {
       const result = await propertyCollection.find(query).toArray();
       res.send(result)
     })
-    app.delete('/agentProperties/:email', async (req, res) => {
+    app.patch('/agentProperties/:email', async (req, res) => {
       const email = req.params.email;
-      const query = { agentEmail: email };
-      const result = await propertyCollection.deleteMany(query);
+      const filter = { agentEmail: email };
+      const updatedDoc = {
+        $set: {
+          verificationStatus: 'fraud'
+        }
+      }
+      const result = await propertyCollection.updateMany(filter, updatedDoc)
       res.send(result);
     });
-
     app.post('/properties', async (req, res) => {
       const newProperty = req.body;
       const result = await propertyCollection.insertOne(newProperty);

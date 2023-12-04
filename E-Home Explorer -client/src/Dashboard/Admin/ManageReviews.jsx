@@ -46,17 +46,17 @@ const ManageReviews = () => {
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
           {/* head */}
-          <thead>
+          <thead className='text-secondary'>
             <tr>
               <th>Reviewer image</th>
               <th>
 
-                Reviewer Name
+                Reviewer Email
 
               </th>
               <th>
 
-                Reviewer Email
+                Reviewer Name
 
               </th>
               <th>

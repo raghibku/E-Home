@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { FaHome, FaSearch } from "react-icons/fa";
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../provider/AuthProvider';
 import { useQuery } from '@tanstack/react-query';
 import useAxiosPublic from '../hooks/useAxiosPublic';
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext)
+    const navigate = useNavigate();
     const axiosPublic = useAxiosPublic();
     const { data: currentUser = [] } = useQuery({
         queryKey: ['currentUser'],
@@ -23,16 +24,16 @@ const Dashboard = () => {
         
         <div className="flex flex-col md:flex-row">
             {/* dashboard side bar */}
-            <div className="md:w-64 md:min-h-screen bg-primary text-primary-content">
-                <ul className="menu p-4">
+            <div className="md:w-64 md:min-h-screen bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  text-white md:text-2xl font-semibold ">
+                <ul className="grid grid-cols-2 md:grid-cols-1 menu p-4">
                     {
                         currentUser?.role ? (
                             currentUser.role === 'agent' || currentUser.role ===  'fraud' ? (
                                 <>
-                                    <li>
-                                        <NavLink to="/dashboard">
-                                            My Profile</NavLink>
-                                    </li>
+                                    
+                                    <button className='btn glass text-white col-span-2 md:col-span-1' onClick={()=>navigate('/dashboard')}>
+                                        My Profile
+                                    </button>
                                     {
                                         currentUser.role === 'agent' ?
                                             <li>
@@ -57,11 +58,9 @@ const Dashboard = () => {
                                 :
                                 (
                                     <>
-                                        <li>
-                                            <NavLink to="/dashboard">
-
-                                                My Profile</NavLink>
-                                        </li>
+                                        <button className='btn glass text-white col-span-2 md:col-span-1' onClick={()=>navigate('/dashboard')}>
+                                        My Profile
+                                    </button>
                                         <li>
                                             <NavLink to="/dashboard/manageProperties">
 
@@ -86,11 +85,9 @@ const Dashboard = () => {
                                 )
                         ) :
                             (<>
-                                <li>
-                                    <NavLink to="/dashboard">
-
-                                        My Profile</NavLink>
-                                </li>
+                                <button className='btn glass text-white col-span-2 md:col-span-1' onClick={()=>navigate('/dashboard')}>
+                                        My Profile
+                                    </button>
                                 <li>
                                     <NavLink to="/dashboard/wishlist">
 
@@ -110,7 +107,9 @@ const Dashboard = () => {
                         // }
 
                     }
+                </ul>
                     <div className="divider"></div>
+                <ul className="grid grid-cols-2 md:grid-cols-1 menu p-4">
                     <li>
                         <NavLink to="/">
                             <FaHome></FaHome>

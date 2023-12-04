@@ -6,7 +6,7 @@ const AboutUs = () => {
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     <div className='px-4'>
-                        <h2 className="text-4xl font-semibold mb-12">E-Home</h2>
+                        <h2 className="text-4xl font-semibold font-serif mb-12">About E-Home</h2>
                         <p className="text-lg mb-6 ">
                             Discover your dream home effortlessly with E-Home, your trusted real estate partner.            </p>
                         <p className="text-lg mb-6">

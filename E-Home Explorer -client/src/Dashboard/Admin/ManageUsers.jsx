@@ -46,7 +46,7 @@ const ManageUsers = () => {
       })
   }
   const handleFraud = (id, email) => {
-    axiosSecure.delete(`/agentProperties/${email}`)
+    axiosSecure.patch(`/agentProperties/${email}`)
     axiosSecure.patch(`/makeFraud/${id}`)
       .then(res => {
         console.log(res.data)
