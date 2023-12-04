@@ -60,6 +60,12 @@ E-Home is a real estate website designed to facilitate property browsing, wishli
 
 - Admins can oversee and manage user reviews for transparency and quality control.
 
+## Access Info
+- Admin email: admin3570@gmail.com
+- Admin password: 123456$Ss
+- Agent email: agent3570@gmail.com
+- Agent password: 1234$Ss
+
 ## Technologies Used
 
 - React for the frontend
@@ -71,14 +77,4 @@ E-Home is a real estate website designed to facilitate property browsing, wishli
 ## Deployment
 
 The live version of the E-Home website can be accessed [here](https://e-home-2593c.web.app).
-
-## Getting Started
-
-To run the project locally, follow these steps:
-
-1. Clone the repository.
-2. Install dependencies using `npm install` in both the client and server directories.
-3. Configure Firebase and Stripe credentials.
-4. Run the development server using `npm start` for both the client and server.
-
-Feel free to explore, contribute, and enhance the functionality of E-Home!
+Feel free to explore the functionality of E-Home!
