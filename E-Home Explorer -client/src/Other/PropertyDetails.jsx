@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../provider/AuthProvider';
 import useAxiosSecure from '../hooks/useAxiosSecure';
 import Swal from 'sweetalert2'
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 
 const PropertyDetails = () => {
   const axiosSecure = useAxiosSecure();
@@ -12,6 +13,7 @@ const PropertyDetails = () => {
   const [currentUser, setcurrentUser] = useState(null);
   const [reviews, setreviews] = useState(null);
   const date = new Date();
+  const shareUrl = window.location.href;
 
   useEffect(() => {
     if (!loading) {
@@ -41,7 +43,7 @@ const PropertyDetails = () => {
 
     axiosSecure.post('/reviews', newReview)
       .then(res => {
-        
+
         if (res.data.insertedId) {
           Swal.fire({
             title: "Posted!",
@@ -93,9 +95,19 @@ const PropertyDetails = () => {
         </div>
         <p className='text-primary text-xl'>{minPrice}$-{maxPrice}$</p>
         <div className='flex justify-between items-center py-4'>
-          
+
           <button className="btn" onClick={() => document.getElementById('my_modal_5').showModal()}>Review</button>
           <button className='btn btn-secondary' onClick={() => { handleAddToWishlist(_id) }}>Add To Wishlist</button>
+          <div>
+            <FacebookShareButton
+              url={`https://e-home-2593c.web.app/propertyDetails/${_id}`}
+              image={propertyImage}
+              quote={'CheckOut this property!'}
+              hashtag="#EHome"
+            >
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+          </div>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center my-12'>

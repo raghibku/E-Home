@@ -42,6 +42,7 @@ const Advertisement = () => {
                         {property.verificationStatus === 'verified' ?
                           <img src='/logos/icons8-verified-64 (1).png' className='h-10 w-10' alt="" /> :
                           <h1>status:{property.verificationStatus}</h1>
+                        
                         }
                       </>
                     </div>
