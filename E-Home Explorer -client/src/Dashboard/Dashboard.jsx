@@ -24,7 +24,7 @@ const Dashboard = () => {
         
         <div className="flex flex-col md:flex-row">
             {/* dashboard side bar */}
-            <div className="md:w-64 md:min-h-screen bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  text-white md:text-2xl font-semibold ">
+            <div className="md:w-64 md:min-h-screen bg-blue-400 text-white md:text-2xl font-semibold ">
                 <ul className="grid grid-cols-2 md:grid-cols-1 menu p-4">
                     {
                         currentUser?.role ? (

@@ -61,10 +61,18 @@ E-Home is a real estate website designed to facilitate property browsing, wishli
 - Admins can oversee and manage user reviews for transparency and quality control.
 
 ## Access Info
-- Admin email: admin3570@gmail.com
-- Admin password: 123456$Ss
+- Regular User email: regular_user@gmail.com
+- Regular User password: 123456sS$
+
 - Agent email: agent3570@gmail.com
 - Agent password: 1234$Ss
+- Alternative Agent email:sana@gmail.com
+- Alternative Agent password:1234$Ss
+
+- Admin email: admin3570@gmail.com
+- Admin password: 123456$Ss
+
+
 
 ## Technologies Used
 

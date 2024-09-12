@@ -22,7 +22,7 @@ const AboutUs = () => {
                     </div>
                     <div>
                         <img
-                            src="https://source.unsplash.com/aerial-photography-of-rural-r3WAWU5Fi5Q"
+                            src="/images/about.jpg"
                             alt="aboutusimage"
                             className="w-full h-auto rounded-xl"
                         />
